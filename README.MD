@@ -100,3 +100,31 @@ y para detener
 ```
 docker-composer down
 ```
+
+## subir imagen al repositorio de docker hub
+Para subir una imagen al repositorio de docker hub
+* debe crear una cuenta en docker hub
+* debe craar un repositorio
+una vez haya realizado los pasos anteriores en la pagina de dockerhub se procede a logear
+````
+docker login --username [nombre]
+````
+al precionar enter se escribe la contraseña
+
+luego debemos de agregarle un tag a nuestra imagen con el nombre del repositorio
+
+````
+docker tag [nombre del repolocak]:[cualquiercosa] [el nombre del repo en linea]:[cualquier cosa]
+````
+
+quedaria asi 
+
+````
+docker tag tareita:01 luigitercero/tareita:01
+````
+
+y para subir al repositorio 
+
+````
+docker push luigitercero/tareita
+````
